@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- inline styles -->
+    <style>
+    .internal{
+        color: blue;
+    }
+    .inlineAndinternal{
+        color: blue;
+    }
+    .internalAndExternal{
+        color: blue;
+    }
+    .internalAndInlineAndExternal{
+        color: blue;
+   }
+    </style>
+    <link rel="stylesheet" href="./solution.css">
+</head>
+<body>
+    <h1 style="color: red;" class="inline">Inline</h1> 
+    <h1 class="internal">Internal</h1>
+    <h1 class="external">External</h1>
+    <h1 style="color: red;" class="inlineAndinternal">inline + internal</h1><!-- /*between inline and internal, inline color got displayed */ -->
+    <h1 class="internalAndExternal">internal + external</h1><!-- between internal and external,internal color got displayed -->
+    <h1 style="color: red;" class="internalAndInlineAndExternal">Inline + internal + external</h1><!-- /*between the three inline color got displayed */ -->
+</body>
+</html>
